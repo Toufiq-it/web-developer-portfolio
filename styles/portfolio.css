@@ -1,4 +1,9 @@
 /* common shared styles */
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Leto', sans-serif;
@@ -18,6 +23,19 @@ body {
     padding: 18px 35px;
 }
 
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+}
+
 /* nav relatad style */
 
 nav {
@@ -28,7 +46,7 @@ nav {
 }
 
 .nav-title {
-    color: var(--dark-01, #181818);
+    color: #181818;
     font-size: 45px;
     font-weight: 800;
 }
@@ -49,17 +67,57 @@ nav a {
 }
 
 /* header related style */
-.header{
+.header {
     background-color: #FFF8F3;
- }
- .banner{
-    padding: 30px 30px 30px 150px;
+    background-image: url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.banner {
+    /*padding:top right button left */
+    padding: 30px 30px 0px 150px;
+    /* প্যাডিং হচ্ছে এইচটিএমএল এলিমেন্টের বর্ডার এবং কনটেন্টের মাঝখানের দুরত্ব। */
     display: flex;
     align-items: center;
- }
-.banner .profile-pic{
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner .profile-pic {
     width: 500px;
- }
- .banner-content{
-    
- }
+}
+
+.banner-greeting {
+    font-size: 45px;
+    color: #474747;
+    margin-bottom: 0;
+}
+
+.banner-title {
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    /* মার্জিন দিয়ে এলিমেন্টের বাইরে (বর্ডারের বাইরে) দুরত্ব বা স্পেস তৈরী করা যায় */
+}
+
+.banner-description {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* main section style */
+
+/* About section style */
+.about {
+    padding: 130px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 130px 0;
+}
